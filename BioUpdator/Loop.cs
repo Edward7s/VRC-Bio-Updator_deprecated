@@ -79,7 +79,7 @@ namespace BioUpdator
                     }
                     Thread.Sleep(100);
                     _jObject = JObject.FromObject(JObject.Parse(WebReuests.Instance.SendVRCWebReq(WebReuests.RequestType.Get, Urls.VRCApiLink + Urls.Avatar + _avatarId)));
-                    _avatarName = (string)_jObject["name"];
+                    _avatarName = Extentions.ValidateString((string)_jObject["name"]);
                     _avatarVersion = (int)_jObject["version"];
                     Thread.Sleep(100);
                     _updatedBio = Extentions.FormBetterDescription(_bio, _friendsOnline, _friendsTotal, _friendsOffline, _usersInWorlds, _capacity, _region, _instanceType, _worldName, _avatarName, _avatarVersion);
