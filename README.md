@@ -3,7 +3,7 @@
 # VRC-Spotify-Status
 A console app that updates you bio based on the keywords you writed in the bio.
 The app will start with the windows (Once you launch it do not change the path of the exe!!!!!)
-
+Basically a discord rich presence but for VRC.
 #### The UserID and AuthCookie you can get them from VRC Website.
 
 ## Preview
